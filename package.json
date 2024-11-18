@@ -12,10 +12,12 @@
   "description": "",
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "prisma": "^5.22.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.3"
   },
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "D": "^1.0.0",
     "express": "^4.21.1",
     "pg": "^8.13.1",
