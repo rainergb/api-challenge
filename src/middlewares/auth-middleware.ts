@@ -23,6 +23,7 @@ export function authMiddleware(
     // Validar o token
     const { sub } = verify(token, process.env.JWT_SECRET) as Payload;
 
+    // recuperar o id do token e colocar dentro de uma variavel userId dentro do Request
     req.userId = Number(sub);
 
     return next();
