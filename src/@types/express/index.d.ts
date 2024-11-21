@@ -1,8 +1,5 @@
-// @types/express/index.d.ts
-import "express";
-
-declare module "express" {
+declare namespace Express {
   export interface Request {
-    userId?: number;
+    userId: number;
   }
 }

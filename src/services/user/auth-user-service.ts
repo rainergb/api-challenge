@@ -13,9 +13,6 @@ export const AuthUserService = async (identifier: string, password: string) => {
     }
   });
 
-  // Loga o usuário encontrado (ou undefined se não encontrou)
-  console.log("Usuário Encontrado:", user);
-
   if (!user) {
     throw new Error("User/Senha incorretos");
   }
